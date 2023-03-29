@@ -1,0 +1,62 @@
+@import "reset";
+@import "img";
+@import "mixin";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto+Mono:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "home-header";
+@import "home-section2";
+@import "home-section3";
+@import "home-section4";
+@import "home-section5";
+@import "home-section6";
+@import "page2-header";
+@import "page2-section";
+@import "page2-section2";
+$color: #00cc99;
+
+
+
+body{
+  line-height: 1.5;
+  font-family: 'Roboto','Roboto Mono', monospace,'Noto Sans TC', sans-serif;
+}
+a{
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+.container{
+  @include container(1296px);
+  @include pad(){
+    @include container(992px);
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  @include phone(){
+    @include container(767px);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.primary-color{
+  color:#AA0601;
+}
+.second-color{
+  color:#650300;
+}
+.section-color{
+  color:#FBF2F2;
+}
+
+
+
+.header {
+  height: 200px;
+  background-color: #00cc99;
+}
+
+.footer {
+  height: 200px;
+  background-color: #00cc99;
+}
+
+

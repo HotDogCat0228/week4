@@ -1,0 +1,101 @@
+@mixin container($max-width){
+    max-width: $max-width;
+}
+@mixin pad{
+    @media (max-width: 992px){
+        @content
+    }
+}
+@mixin phone{
+    @media (max-width: 767px){
+        @content
+    }
+}
+@mixin flex-row{
+    display: flex;
+    justify-content: space-between;
+}
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.m0-auto{
+    margin: 0 auto;
+}
+.fz-14{
+    font-size: 14px;
+}
+.fz-20{
+    font-size: 20px;
+}
+.fz-24{
+    font-size: 24px;
+}
+.fz-32{
+    font-size: 32px;
+}
+.fz-36{
+    font-size: 36px;
+}
+.fz-42{
+    font-size: 42px;
+}
+.fz-48{
+    font-size: 48px;
+}
+.fz-64{
+    font-size: 64px;
+}
+
+.text-center{
+    text-align: center;
+}
+.p-top-bottom-8{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.p-top-bottom-16{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.p-top-bottom-80{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.mb-half{
+    margin-bottom: 4px;
+}
+.mb-1{
+    margin-bottom: 8px;
+}
+.mb-2{
+    margin-bottom: 16px;
+}
+.mb-3{
+    margin-bottom: 24px;
+}
+.mb-4{
+    margin-bottom: 32px;
+}
+.mb-6{
+    margin-bottom: 48px;
+}
+.mr-1{
+    margin-right: 8px;
+}
+.mr-3{
+    margin-right: 24px;
+}
+.mr-8{
+    margin-right: 64px;
+}
+.box-shadow{
+    box-shadow: 0px 2px 6px #00000029;
+}

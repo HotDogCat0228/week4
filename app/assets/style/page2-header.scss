@@ -1,0 +1,18 @@
+.page2-header{
+    ul{
+        @include flex-row;
+        li{
+            border: 1px solid #DCDCDC;
+            width: 33.3%;
+            a{
+                color:#000000;
+                padding: 23px 119px 23px 119px;
+            }
+            a:hover{
+                padding-bottom: 15px;
+                border-bottom: 8px solid #AA0601;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,47 @@
+.home-section4 {
+  max-width: 100%;
+  height: auto;
+  background-image: url(../images/index-bg.png);
+  h2 {
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    @include phone() {
+      font-size: 24px;
+    }
+  }
+  .row {
+    @include flex-row;
+    @include pad() {
+      flex-wrap: wrap;
+    }
+    .item {
+      @include flex-column-center;
+      p {
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        font-weight: 700;
+        font-style: italic;
+      }
+      @include pad() {
+        width: 100%;
+        margin-bottom: 24px;
+      }
+    }
+    .item:nth-child(1) {
+      @include phone() {
+        img {
+          content: url(../images/home-section4-1-sm.png);
+        }
+      }
+    }
+    .item:nth-child(2) {
+      @include phone() {
+        img {
+          content: url(../images/home-section4-2-sm.png);
+        }
+      }
+    }
+  }
+}

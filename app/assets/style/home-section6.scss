@@ -1,0 +1,37 @@
+.home-section6 {
+  @include phone(){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  background: #fbf2f2;
+  .container {
+    max-width: 636px;
+    .row {
+      width: 100%;
+      @include flex-column-center;
+      align-items: flex-start;
+      input {
+        width: 100%;
+      }
+      a {
+        background: #aa0601;
+        color: #fff;
+        width: 65%;
+      }
+      label {
+        display: flex;
+        input {
+          height: 12px;
+          width: 12px;
+        }
+      }
+    }
+  }
+  h2 {
+    text-align: center;
+    font-weight: 700;
+    @include phone(){
+        font-size: 24px;
+    }
+  }
+}

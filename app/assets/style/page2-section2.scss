@@ -1,0 +1,65 @@
+.page2-section2 {
+  h2,
+  h3 {
+    text-align: center;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .item {
+    width: 24%;
+    margin-bottom: 80px;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      li {
+        width: 50%;
+      }
+      li:nth-child(2){
+        text-align: right;
+        color: #AA0601;
+        font-weight: 700;
+      }
+    }
+    .color-box{
+        display: flex;
+        li{
+            height: 24px;
+            width: 24px;
+            margin-right: 8px;
+            border-radius: 4px;
+        }
+        li:nth-child(1){
+            background: #5F3E2D;
+        }
+        li:nth-child(2){
+            background: #B75929;
+        }
+    }
+  }
+  .page-record{
+    ul{
+        @include flex-row;
+        justify-content: center;
+        li{
+            a{
+                border: 1px solid #555555;
+                padding: 12px;
+                color: #555555;
+            }
+            a:hover{
+                color:#fff;
+                background: #000;
+            }
+            a:focus{
+                background: #F2F2F2;
+            }
+        }
+    }
+    
+    
+  }
+}
