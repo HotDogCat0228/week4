@@ -26,16 +26,6 @@ a{
 }
 .container{
   @include container(1296px);
-  @include pad(){
-    @include container(992px);
-    padding-left: 36px;
-    padding-right: 36px;
-  }
-  @include phone(){
-    @include container(767px);
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
 .primary-color{
   color:#AA0601;

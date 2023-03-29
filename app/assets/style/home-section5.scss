@@ -1,5 +1,13 @@
 
 .home-section5{
+    @include pad(){
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    @include phone(){
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     @include pad{
         padding-bottom: 0;
     }
@@ -12,8 +20,12 @@
     }
     .row{
         @include flex-row;
+        justify-content: space-around;
         @include pad(){
-            flex-wrap: wrap;
+            flex-wrap: wrap;           
+        }
+        @include phone(){
+            justify-content: center;
         }
         .item{
             width: 23%;
@@ -25,13 +37,11 @@
             @include flex-column-center;
             @include pad(){
                 height: 511px;
-                width: 48%;
+                width: 45%;
                 margin-bottom: 24px;
             }
-            @include phone(){
-                
-                width: 100%;
-                
+            @include phone(){               
+                width: 51%;                
             }
             .card-text{
                 height: 40%;

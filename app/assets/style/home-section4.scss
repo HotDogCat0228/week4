@@ -1,4 +1,8 @@
 .home-section4 {
+    @include pad(){
+        padding-left: 36px;
+        padding-right: 36px;
+    }
   max-width: 100%;
   height: auto;
   background-image: url(../images/index-bg.png);

@@ -1,4 +1,12 @@
 .home-section3 {
+  @include pad(){
+    padding-left: 36px;
+    padding-right: 36px;
+}
+@include phone(){
+    padding-left: 15px;
+    padding-right: 15px;
+}
     h2{
         text-align: center;
         font-weight: 700;

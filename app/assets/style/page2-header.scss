@@ -3,14 +3,25 @@
         @include flex-row;
         li{
             border: 1px solid #DCDCDC;
-            width: 33.3%;
+            width: 33.3%;           
             a{
                 color:#000000;
-                padding: 23px 119px 23px 119px;
+                padding: 23px 118px 23px 118px;
+                @include pad(){                   
+                    padding: 16px 48px 16px 48px;
+                }
+                @include phone(){
+                    font-size: 16px;
+                    font-weight: 900;
+                    padding: 16px 12px 16px 12px;
+                }
             }
             a:hover{
                 padding-bottom: 15px;
                 border-bottom: 8px solid #AA0601;
+                @include pad(){
+                    padding-bottom: 8px;
+                }
             }
         }
         

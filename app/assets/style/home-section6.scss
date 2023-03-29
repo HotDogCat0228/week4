@@ -1,4 +1,12 @@
 .home-section6 {
+    @include pad(){
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    @include phone(){
+        padding-left: 15px;
+        padding-right: 15px;
+    }
   @include phone(){
     padding-top: 40px;
     padding-bottom: 40px;

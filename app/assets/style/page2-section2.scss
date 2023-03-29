@@ -1,4 +1,12 @@
 .page2-section2 {
+    @include pad(){
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    @include phone(){
+        padding-left: 0px;
+        padding-right: 0px;
+    }
   h2,
   h3 {
     text-align: center;
@@ -7,10 +15,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @include phone(){
+        justify-content: center;
+    }
   }
   .item {
     width: 24%;
     margin-bottom: 80px;
+    @include pad(){
+        width: 48%;
+    }
+    @include phone(){
+        width: 80%;
+    }
+
     ul {
       display: flex;
       justify-content: space-between;
