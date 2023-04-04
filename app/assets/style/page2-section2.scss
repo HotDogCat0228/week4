@@ -1,32 +1,32 @@
 .page2-section2 {
-    @include pad(){
-        padding-left: 36px;
-        padding-right: 36px;
-    }
-    @include phone(){
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+  @include pad() {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  @include phone() {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   h2,
   h3 {
     text-align: center;
   }
-  .row{
+  .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    @include phone(){
-        justify-content: center;
+    @include phone() {
+      justify-content: center;
     }
   }
   .item {
     width: 24%;
     margin-bottom: 80px;
-    @include pad(){
-        width: 48%;
+    @include pad() {
+      width: 48%;
     }
-    @include phone(){
-        width: 80%;
+    @include phone() {
+      width: 80%;
     }
 
     ul {
@@ -36,48 +36,59 @@
       li {
         width: 50%;
       }
-      li:nth-child(2){
+      li:nth-child(2) {
         text-align: right;
-        color: #AA0601;
+        color: #aa0601;
         font-weight: 700;
       }
     }
-    .color-box{
-        display: flex;
-        li{
-            height: 24px;
-            width: 24px;
-            margin-right: 8px;
-            border-radius: 4px;
-        }
-        li:nth-child(1){
-            background: #5F3E2D;
-        }
-        li:nth-child(2){
-            background: #B75929;
-        }
+    .color-box {
+      display: flex;
+      li {
+        height: 24px;
+        width: 24px;
+        margin-right: 8px;
+        border-radius: 4px;
+      }
+      li:nth-child(1) {
+        background: #5f3e2d;
+      }
+      li:nth-child(2) {
+        background: #b75929;
+      }
     }
   }
-  .page-record{
-    ul{
-        @include flex-row;
-        justify-content: center;
-        li{
-            a{
-                border: 1px solid #555555;
-                padding: 12px;
-                color: #555555;
-            }
-            a:hover{
-                color:#fff;
-                background: #000;
-            }
-            a:focus{
-                background: #F2F2F2;
-            }
+  .page-record {
+    ul {
+      @include flex-row;
+      justify-content: center;
+      li {
+        a {
+          border: 1px solid #555555;
+          padding: 12px;
+          color: #555555;
         }
+        a:hover {
+          color: #fff;
+          background: #000;
+        }
+        a:focus {
+          background: #f2f2f2;
+        }
+      }
     }
-    
-    
   }
+}
+.page3-section2 {
+  .item {
+    width: 32%;
+    @include pad() {
+      width: 48%;
+    }
+    @include phone() {
+      width: 80%;
+    }
+  }
+  
+  
 }
