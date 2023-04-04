@@ -605,6 +605,91 @@ img {
     .page3-section2 .item {
       width: 80%; } }
 
+@media (max-width: 992px) {
+  .page4-title {
+    padding-left: 16px; } }
+
+.page4-title h2 {
+  font-weight: 700;
+  padding-left: 16px;
+  border-left: 8px solid #9F1213;
+  margin-bottom: 32px; }
+  @media (max-width: 767px) {
+    .page4-title h2 {
+      font-size: 24px; } }
+
+.page4-content .flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px; }
+  @media (max-width: 992px) {
+    .page4-content .flex-box {
+      padding-left: 16px; } }
+  .page4-content .flex-box h3 {
+    margin-right: 16px; }
+  .page4-content .flex-box .selector {
+    height: 38px;
+    width: 304px; }
+
+.page4-content .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  @media (max-width: 992px) {
+    .page4-content .row {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding-right: 16px;
+      padding-left: 16px; } }
+  .page4-content .row .item {
+    border: 1px solid #00000020;
+    width: 32%;
+    margin-right: 14px;
+    margin-bottom: 48px; }
+    @media (max-width: 992px) {
+      .page4-content .row .item {
+        width: 48%;
+        margin-right: 0px; } }
+    @media (max-width: 767px) {
+      .page4-content .row .item {
+        width: 100%; } }
+    .page4-content .row .item h3 {
+      font-size: 24px;
+      padding-left: 24px;
+      line-height: 51px;
+      border-bottom: 1px solid #00000020; }
+    .page4-content .row .item ul {
+      padding: 16px 24px 16px 24px; }
+    .page4-content .row .item li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 20px;
+      margin-bottom: 8px; }
+      .page4-content .row .item li img {
+        height: 18px;
+        width: 18px;
+        margin-right: 11px; }
+    .page4-content .row .item a {
+      color: #fff;
+      background-color: #000;
+      text-align: center;
+      padding-top: 16px;
+      padding-bottom: 16px; }
+    .page4-content .row .item a:hover {
+      color: #000;
+      background-color: gray; }
+
 body {
   line-height: 1.5;
   font-family: 'Roboto','Roboto Mono', monospace,'Noto Sans TC', sans-serif; }
@@ -625,6 +710,9 @@ a {
 
 .section-color {
   color: #FBF2F2; }
+
+.option-color {
+  color: #495057; }
 
 .header {
   height: 200px;
