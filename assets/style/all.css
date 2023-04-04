@@ -140,14 +140,12 @@ img {
   @media (max-width: 992px) {
     .home-header {
       padding-left: 36px;
-      padding-right: 36px; } }
+      padding-right: 36px;
+      background-image: url(../images/home-header-sm.png); } }
   @media (max-width: 767px) {
     .home-header {
       padding-left: 15px;
       padding-right: 15px; } }
-  @media (max-width: 992px) {
-    .home-header {
-      background-image: url(../images/home-header-sm.png); } }
   .home-header .content {
     height: 100%;
     display: -webkit-box;
